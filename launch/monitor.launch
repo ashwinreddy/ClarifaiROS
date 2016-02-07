@@ -1,0 +1,4 @@
+<launch>
+	<include file="$(find turtlebot_teleop)/launch/keyboard_teleop.launch"></include>
+	<node name="kinect_viewer" pkg="image_view" type="image_view" args="image:=/camera/rgb/image_rect_mono theora"/>
+</launch>
